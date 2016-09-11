@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>{rval page_title}</title>
+<meta name="viewport" content="target-densitydpi=medium-dpi, width=device-width, initial-scale=1.0, user-scalable=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate, proxy-revalidate">
+<link rel="stylesheet" type="text/css" href="./common/css/base.css">
+<script type="text/javascript" src="./common/js/inquiry.js"></script>
+</head>
+<body id="inquiry">
+<noscript><em>javascriptを有効にして下さい。</em></noscript>
+
+<div id="wrapper">
+
+<header>
+	<div>
+		<h1>お問い合わせ</h1>
+	</div>
+</header>
+
+<div id="main">
+	<!-- flow -->
+	<ul id="flow">
+		<li class="active"><span class="wFont">入力</span></li>
+		<li><span class="wFont">確認</span></li>
+		<li><span class="wFont">完了</span></li>
+	</ul><!--// flow -->
+
+	<div id="mainBody">
+		<p>下記フォームに必要な情報を入力し、「確認」ボタンをクリックして下さい。</p>
+		<form action="./form.php" method="post" id="contact" name="contact">
+			<section>
+				<h2>送信情報</h2>
+				<dl class="float">
+					<dt>お名前</dt>
+					<dd>
+						<p><input type="text" name="sei" value="" placeholder="姓"></p>
+						<p><input type="text" name="mei" value="" placeholder="名"></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>所属</dt>
+					<dd>
+						<p><input type="text" name="department" value="" placeholder="〇〇部〇〇課"></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>Email</dt>
+					<dd>
+						<p><input type="text" name="email" value="" placeholder="yourmail@xxx.com"></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>Email(CCに追加用)</dt>
+					<dd>
+						<p><input type="text" name="emailch" value="" placeholder="yourmail@xxx.com"></p>
+						<small>複数入れる場合は「,」で区切り、入力してください</small>
+					</dd>
+				</dl>
+			</section>
+			<section>
+				<h2>お問い合わせ詳細</h2>
+				<dl>
+					<dt>タイトル</dt>
+					<dd>
+						<p><input type="text" name="title" value="" placeholder=""></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>発生日</dt>
+					<dd>
+						<p></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>希望期限</dt>
+					<dd>
+						<p><input type="text" name="title" value="" placeholder=""></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>概要</dt>
+					<dd>
+						<p><input type="text" name="title" value="" placeholder=""></p>
+						<small>50文字以内で入力してください</small>
+					</dd>
+				</dl>
+				<dl>
+					<dt>背景</dt>
+					<dd>
+						<p><input type="text" name="title" value="" placeholder=""></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>背景</dt>
+					<dd>
+						<p><input type="text" name="title" value="" placeholder=""></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>補足</dt>
+					<dd>
+						<p><textarea name="content" value=""></textarea></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>添付ファイル</dt>
+					<dd>
+						<p><input type="text" name="title" value="" placeholder=""></p>
+						<small>※現在調整中</small>
+					</dd>
+				</dl>
+				<p class="bt"><a class="submit" href="./confirm.php" title="確認する">確認する</a></p>
+			</form>
+		</section>
+	</div>
+</div><!--//main-->
