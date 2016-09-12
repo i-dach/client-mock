@@ -1,0 +1,110 @@
+@media all {
+
+/* all tags style ------------------------------------------------------------------------------- */
+* {
+	margin: 0px;
+	padding: 0px;
+	outline:none;
+}
+
+/* html style ----------------------------------------------------------------------------------- */
+html {
+	width: 100%;
+	font-size: 62.5%;
+}
+
+/* body style ----------------------------------------------------------------------------------- */
+body {
+	width: 100%;
+	color: #535353;
+	font: normal normal normal 1.2em/1.2 'Helvetica Neue', Helvetica, 'メイリオ', 'Hiragino Kaku Gothic ProN', sans-serif;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* regular anchor style ------------------------------------------------------------------------- */
+a {
+	color: #535353;
+	text-decoration: none;
+}
+
+a:link {
+}
+
+a:hover {
+	opacity:0.6;
+}
+
+a:visited {
+}
+
+/* regular each tags style ---------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: normal;
+}
+
+ul {
+	list-style: none;
+}
+
+em, strong {
+	font-style: normal;
+	font-weight: bold;
+}
+
+address {
+	font-style: normal;
+}
+
+img {
+	background: transparent;
+	border: none;
+}
+
+br {
+	clear: both;
+}
+
+hr {
+	clear: both;
+	height: 1px;
+	border: none;
+}
+
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	border-radius:0px;
+	outline:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	appearance:none;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+}
+
+input[type="button"]:not(:target){ filter: none\9; }
+input[type="reset"]:not(:target){ filter: none\9; }
+input[type="submit"]:not(:target){ filter: none\9; }
+
+.hidden {
+	display: none !important;
+}
+
+.imeon {
+	ime-mode: active;
+}
+
+.imeoff {
+	ime-mode: disabled;
+}
+
+}

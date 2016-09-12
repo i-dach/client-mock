@@ -198,8 +198,8 @@
 	}
 
 	#flow > *.active:before{
-		border-color:#1bd000;
-		background-color:#1bd000;
+		border-color:#92A8D1;
+		background-color:#92A8D1;
 	}
 		
 	#flow > * > span{
@@ -285,7 +285,7 @@
 		color:#fff;
 		line-height:1.5em;
 		padding:10px 12px;
-		background-color:#1bd000;
+		background-color:#92A8D1;
 	}
 	
 	.back{
