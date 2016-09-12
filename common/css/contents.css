@@ -409,20 +409,20 @@
 		box-sizing:border-box;
 	}
 	
-	div#main form > dl{
+	div#main form dl{
 		padding:16px 0px;
 		overflow:hidden;
 		zoom:1;
 	}
 	
-	div#main form > dl > dt{
+	div#main form dl > dt{
 		position:relative;
 		float:left;
 		width:200px;
 		padding:6px 0px;
 	}
 	
-	div#main form > dl > dd{
+	div#main form dl > dd{
 		float:left;
 		width:770px;
 		margin-left:30px;
@@ -440,7 +440,7 @@
 		margin-top:0px;
 	}
 	
-	div#main form > dl > dd > p + p{
+	div#main form dl > dd > p + p{
 		margin-top:12px;
 	}
 	
@@ -483,7 +483,7 @@
 		width:102px;
 	}
 	
-	div#main form > dl > dd > small{
+	div#main form dl > dd > small{
 		display:block;
 	}
 	
@@ -492,7 +492,7 @@
 		margin:0px 50px;
 	}
 	
-	div#main form > dl > dd{
+	div#main form dl > dd{
 		width:670px;
 	}
 
@@ -556,12 +556,12 @@
 		width:100%;
 	}
 
-	div#main form.lateral > dl > dd{
+	div#main form.lateral dl > dd{
 		width:100%;
 		margin-left:0px;
 	}
 
-	div#main form.lateral > dl > dd > p + p{
+	div#main form.lateral dl > dd > p + p{
 		margin-top:0px;
 	}
 
