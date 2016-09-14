@@ -35,20 +35,20 @@
 		<form action="./form.php" method="post" id="contact" name="contact">
 			<section>
 				<h2>送信情報</h2>
-				<dl class="float">
+				<dl class="float must">
 					<dt>お名前</dt>
 					<dd>
 						<p><input type="text" name="sei" value="" placeholder="姓"></p>
 						<p><input type="text" name="mei" value="" placeholder="名"></p>
 					</dd>
 				</dl>
-				<dl>
+				<dl class="must">
 					<dt>所属</dt>
 					<dd>
 						<p><input type="text" name="department" value="" placeholder="〇〇部〇〇課"></p>
 					</dd>
 				</dl>
-				<dl>
+				<dl class="must">
 					<dt>Email</dt>
 					<dd>
 						<p><input type="text" name="email" value="" placeholder="yourmail@xxx.com"></p>
@@ -64,38 +64,121 @@
 			</section>
 			<section>
 				<h2>お問い合わせ詳細</h2>
-				<dl>
+				<dl class="must">
 					<dt>タイトル</dt>
 					<dd>
 						<p><input type="text" name="title" value="" placeholder=""></p>
 					</dd>
 				</dl>
 				<dl>
-					<dt>発生日</dt>
+					<dt>緊急度</dt>
 					<dd>
-						<p></p>
+						<span><input type="checkbox" name="urgency_1" id="urgency_1" value=""><label for="urgency_1">高</label></span>
+						<span><input type="checkbox" name="urgency_2" id="urgency_2" value=""><label for="urgency_2">中</label></span>
+						<span><input type="checkbox" name="urgency_3" id="urgency_3" value=""><label for="urgency_3">低</label></span>
 					</dd>
 				</dl>
-				<dl>
+				<dl class="line">
+					<dt>発生/確認日</dt>
+					<dd>
+						<p>
+							<span class="sWrap">
+								<select name="year">
+									<option value="">----</option>
+									<?php for($i=2014;$i<=date('Y');$i++){ 
+										echo('<option value="'.$i.'">'.$i.'</option>');
+									}?>
+								</select>
+							</span>
+							年
+						</p>
+						<p>
+							<span class="sWrap">
+								<select name="month">
+									<option value="">----</option>
+									<?php for($i=1;$i<=12;$i++){ 
+										echo('<option value="'.$i.'">'.$i.'</option>');
+									}?>
+								</select>
+							</span>
+							月
+						</p>
+						<p>
+							<span class="sWrap">
+								<select name="day">
+									<option value="">----</option>
+									<?php for($i=1;$i<=31;$i++){ 
+										echo('<option value="'.$i.'">'.$i.'</option>');
+									}?>
+								</select>
+							</span>
+							日
+						</p>
+						<p>
+							<span class="sWrap">
+								<select name="time">
+									<option value="">----</option>
+									<?php for($i=0;$i<=24;$i++){ 
+										echo('<option value="'.$i.'">'.$i.'</option>');
+									}?>
+								</select>
+							</span>
+							時
+						</p>
+					</dd>
+				</dl>
+				<dl class="line">
 					<dt>希望期限</dt>
 					<dd>
-						<p><input type="text" name="title" value="" placeholder=""></p>
+						<p>
+							<span class="sWrap">
+								<select name="year">
+									<option value="">----</option>
+									<?php for($i=2014;$i<=date('Y');$i++){ 
+										echo('<option value="'.$i.'">'.$i.'</option>');
+									}?>
+								</select>
+							</span>
+							年
+						</p>
+						<p>
+							<span class="sWrap">
+								<select name="month">
+									<option value="">----</option>
+									<?php for($i=1;$i<=12;$i++){ 
+										echo('<option value="'.$i.'">'.$i.'</option>');
+									}?>
+								</select>
+							</span>
+							月
+						</p>
+						<p>
+							<span class="sWrap">
+								<select name="day">
+									<option value="">----</option>
+									<?php for($i=1;$i<=31;$i++){ 
+										echo('<option value="'.$i.'">'.$i.'</option>');
+									}?>
+								</select>
+							</span>
+							日
+						</p>
 					</dd>
 				</dl>
-				<dl>
+				<dl class="must">
 					<dt>概要</dt>
 					<dd>
 						<p><input type="text" name="title" value="" placeholder=""></p>
 						<small>50文字以内で入力してください</small>
 					</dd>
 				</dl>
-				<dl>
+				<dl class="must">
 					<dt>背景</dt>
 					<dd>
 						<p><input type="text" name="title" value="" placeholder=""></p>
 					</dd>
 				</dl>
-				<dl>
+				<dl class="must">
 					<dt>背景</dt>
 					<dd>
 						<p><input type="text" name="title" value="" placeholder=""></p>
