@@ -1,0 +1,23 @@
+@media all {
+
+/* wrapper style -------------------------------------------------------------------------------- */
+div#wrapper {
+	position: relative;
+	width: 100%;
+}
+
+/* main style ----------------------------------------------------------------------------------- */
+div#main {
+	clear: both;
+	position: relative;
+	margin: 0% auto;
+	width: 1000px;
+}
+
+div#main:after{
+	content:"";
+	display:block;
+	clear: both;
+}
+
+}
